@@ -30,6 +30,7 @@
     /* Modules */
     // 模块的引用方式,cjs 还可以是esModule
     "module": "ESNext" /* Specify what module code is generated. */,
+    // 包含要检测ts的目录 ./代表tsconfig.json所在的根目录
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
     // 文件解析的方式使用node解析的方式，从里向外
     // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
@@ -39,8 +40,9 @@
     // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // tsc 转化ts文件的相对目录
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
+    // 解析第三方库文件需要下载@types/库文件的.d.ts文件
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
-    // 解析第三方库文件需要下载@types/库文件的.d.ts文件，使用node解析
+    // 使用node解析
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     // 允许在ts文件中导入json文件
