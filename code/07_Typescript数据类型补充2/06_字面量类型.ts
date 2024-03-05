@@ -5,11 +5,11 @@
 // 什么是字面量类型？
 // 就是值和类型是一样的，这样的情况下，他的值默认情况下不能在改变(除了借助其他方法)
 
-const message='hello world'
-let mes='curry'
+const message = "hello world";
+let mes = "curry";
 
-const index=1//字面量类型
+const index = 1; //字面量类型
 // index=2//报错
-let num=2
+let num = 2;
 
-export {}
+export {};

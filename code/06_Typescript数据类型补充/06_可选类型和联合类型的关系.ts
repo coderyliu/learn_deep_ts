@@ -5,10 +5,8 @@
 
 // }
 // 等价于
-function foo(message:string|undefined){
-
-}
+function foo(message: string | undefined) {}
 
 // let mes:string='1'
 
-export {}
+export {};

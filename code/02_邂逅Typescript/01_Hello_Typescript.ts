@@ -1,9 +1,9 @@
-let message:string='hello typescript'
+let message: string = "hello typescript";
 
-function foo(payLoad:string){
-  console.log(payLoad.length)
+function foo(payLoad: string) {
+  console.log(payLoad.length);
 }
 
-foo('123')
+foo("123");
 
-export {}
+export {};

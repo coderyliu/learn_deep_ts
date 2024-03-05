@@ -1,19 +1,17 @@
-type Method='Get'|'Post'
+type Method = "Get" | "Post";
 
-function request(url:string,method:Method){
+function request(url: string, method: Method) {}
 
-}
+type Request = {
+  url: string;
+  method: Method;
+};
 
-type Request={
-  url:string,
-  method:Method
-}
+const options: Request = {
+  url: "http://www.baidu.com",
+  method: "Post",
+};
 
-const options:Request={
-  url:'http://www.baidu.com',
-  method:'Post'
-}
+request(options.url, options.method);
 
-request(options.url,options.method)
-
-export {}
+export {};

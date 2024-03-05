@@ -5,31 +5,27 @@
 // el.innerHTML='coder liu'
 
 // 这种情况下ts编译器就不会报错
-const el=document.getElementById('coder') as HTMLImageElement
+const el = document.getElementById("coder") as HTMLImageElement;
 
-el.src='url地址'
+el.src = "url地址";
 
 // 另外案例
-class Person{
+class Person {}
 
+class Student extends Person {
+  studying() {}
 }
 
-class Student extends Person{
-  studying(){
-
-  }
+function sayHello(p: Person) {
+  (p as Student).studying();
 }
+const stu = new Student();
 
-function sayHello(p:Person){
-  (p as Student).studying()
-}
-const stu=new Student()
-
-sayHello(stu)
+sayHello(stu);
 
 // 案例3 as any/unknown
-let message='hello'
+let message = "hello";
 // 如果我们想要给message赋值为其他类型，可以类型断言
-let num:number=(message as any) as number
+let num: number = message as any as number;
 
-export {}
+export {};

@@ -1,12 +1,12 @@
-interface ILength{
-  length:number
+interface ILength {
+  length: number;
 }
 
-function getLength<T extends ILength>(arg:T){
-  return arg.length
+function getLength<T extends ILength>(arg: T) {
+  return arg.length;
 }
 
 // getLength(2)//报错
-getLength('abc')
-getLength(['kobe'])
-getLength({length:10})
+getLength("abc");
+getLength(["kobe"]);
+getLength({ length: 10 });

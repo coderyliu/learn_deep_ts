@@ -1,16 +1,16 @@
-function useState(state:any){
-  let currentState=state
+function useState(state: any) {
+  let currentState = state;
 
-  const changeState=(newState:any)=>{
-    currentState=newState
-  }
+  const changeState = (newState: any) => {
+    currentState = newState;
+  };
 
-  const tuple:[any,(newState:any)=>void]=[currentState,changeState]
-  return tuple
+  const tuple: [any, (newState: any) => void] = [currentState, changeState];
+  return tuple;
 }
 
-const [counter,setCounter]=useState(10)
+const [counter, setCounter] = useState(10);
 
-const [title,setTitle]=useState('abc')
+const [title, setTitle] = useState("abc");
 
-export {}
+export {};

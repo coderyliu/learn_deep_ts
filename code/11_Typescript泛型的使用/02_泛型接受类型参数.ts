@@ -1,5 +1,5 @@
-function add<T,E>(num:T,str:E):T{
-  return num
+function add<T, E>(num: T, str: E): T {
+  return num;
 }
 
-add<number,string>(1,'kobe')
+add<number, string>(1, "kobe");

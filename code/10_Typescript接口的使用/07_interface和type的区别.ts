@@ -9,12 +9,12 @@
 // type IFoo={}
 
 // interface不会，而是把它们合并起来
-interface IBar{
-  name:string
+interface IBar {
+  name: string;
 }
 
-interface IBar{
-  age:number
+interface IBar {
+  age: number;
 }
 
 // 相当于

@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var message = 'hello typescript';
 function foo(payLoad) {
     console.log(payLoad.length);
