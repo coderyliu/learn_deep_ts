@@ -1,5 +1,4 @@
 // * 实现一个 OptionalKeys 工具类型，用来获取对象类型中声明的可选属性。具体的使用示例如下所示：
-// type OptionalKeys<T> = // 你的实现代码
 
 type Person = {
   id: string;

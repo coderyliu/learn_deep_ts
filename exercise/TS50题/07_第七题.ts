@@ -1,5 +1,4 @@
 // *使用类型别名定义一个 EmptyObject 类型，使得该类型只允许空对象赋值：
-// type EmptyObject = {};
 type EmptyObject = {
   [K in PropertyKey]: never;
 };

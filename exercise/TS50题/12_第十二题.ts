@@ -1,5 +1,4 @@
 //  * 实现一个 Head 工具类型，用于获取数组类型的第一个类型。具体的使用示例如下所示：
-// type Head<T extends Array<any>> = // 你的实现代码
 
 type Head<T extends Array<any>> = T extends [] ? never : T[0];
 

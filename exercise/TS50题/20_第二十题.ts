@@ -1,15 +1,10 @@
 // * 实现一个 Curry 工具类型，用来实现函数类型的柯里化处理。具体的使用示例如下所示：
-// type Curry<
-//   F extends (...args: any[]) => any,
-//   P extends any[] = Parameters<F>,
-//   R = ReturnType<F>
-// > = // 你的实现代码
-
 type LastArray<T extends any[]> = T extends [infer A, ...infer B]
   ? B extends []
     ? T
     : LastArray<B>
   : [];
+
 type Curry<
   F extends (...args: any[]) => any,
   P extends any[] = Parameters<F>,

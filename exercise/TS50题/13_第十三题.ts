@@ -1,5 +1,4 @@
 // *实现一个 Tail 工具类型，用于获取数组类型除了第一个类型外，剩余的类型。具体的使用示例如下所示：
-// type Tail<T extends Array<any>> =  // 你的实现代码
 
 type Tail<T extends Array<any>> = T extends [f: any, ...rest: infer U] ? U : [];
 
